@@ -2,15 +2,23 @@ function getMessage() {
     randomNumber = Math.floor(Math.random() * 3);
     switch (randomNumber) {
         case 0:
-            return "Vad säger en Göteborgare till ett Star Wars fan? - JeeDaaaj.";
+            return 'Vad säger en Göteborgare till ett Star Wars fan? - JeeDaaaj.';
         case 1:
-            return "Vad sa den ena kannibalen till den andra? - E du go eller?";
+            return 'Vad sa den ena kannibalen till den andra? - E du go eller?';
         case 2:
-            return "Varför är det ingen snö på gatorna i Glasgow på vintern? - De e la klart. 600 000 skottar.";
+            return 'Varför är det ingen snö på gatorna i Glasgow på vintern? - De e la klart. 600 000 skottar.';
     }
 }
 console.log(getMessage());
+const answerElement = document.getElementById("answer")
 
+const handleClick = (event) => {
+    const choice = event.target.value;
+    playGame(choice);
+};
+
+const rockButton = document.getElementById("rock")
+rockButton.addEventListener('click', handleClick);
 
 /*
 Gick det bra med rymdresan? 
