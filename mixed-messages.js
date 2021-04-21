@@ -9,6 +9,7 @@ function getMessage() {
             return "Varför är det ingen snö på gatorna i Glasgow på vintern? - De e la klart. 600 000 skottar.";
     }
 }
+console.log(getMessage());
 
 
 /*
