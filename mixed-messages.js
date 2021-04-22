@@ -10,15 +10,19 @@ function getMessage() {
     }
 }
 console.log(getMessage());
-const answerElement = document.getElementById("answer")
 
-const handleClick = (event) => {
-    const choice = event.target.value;
-    playGame(choice);
-};
 
-const rockButton = document.getElementById("rock")
-rockButton.addEventListener('click', handleClick);
+
+const knapp = document.createElement("getMessage");
+
+
+
+
+
+knapp.addEventListener ("click", function() {
+  alert("did something");
+});
+
 
 /*
 Gick det bra med rymdresan? 
